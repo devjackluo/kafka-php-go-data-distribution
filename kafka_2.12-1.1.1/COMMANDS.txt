@@ -1,0 +1,10 @@
+#FIRST START ZOOKEEPER
+.\zookeeper\bin\zkServer
+
+#RUN THESE BROKER SERVERS
+.\bin\windows\kafka-server-start.bat .\config\server-0.properties
+.\bin\windows\kafka-server-start.bat .\config\server-1.properties
+.\bin\windows\kafka-server-start.bat .\config\server-2.properties
+
+#CREATE A TOPIC IF YOU HAVEN'T DONE SO
+.\bin\windows\kafka-topics.bat --create --topic my_topic --zookeeper localhost:2181 --replication-factor 2 --partitions 3
