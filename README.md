@@ -45,3 +45,5 @@ select a post command and the URL 'localhost/ingest.php' with the same JSON show
 (Response has sample JSON given plus a personal Get-Request to one of my APIs)
 (if you don't see any message try restarting GoListener.exe in cmd or waiting just a little bit longer)
 ![alt text](https://i.imgur.com/cGRAIwy.png)
+
+11. Sometimes if it happens to fail startup, you'll want to delete all the logs in the 'kafka_2.12-1.1.1' folder and also 'C:\tmp' folder and 'C:\log'. 
